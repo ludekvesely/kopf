@@ -1,6 +1,6 @@
 FROM lmenezes/elasticsearch-kopf:latest
 
-ADD cmd.sh /cmd.sh
-RUN chmod +x /cmd.sh
+ADD run-enable-shield.sh /run-enable-shield.sh
+RUN chmod +x /run-enable-shield.sh
 
-ENTRYPOINT ["/cmd.sh"]
+ENTRYPOINT ["/run-enable-shield.sh"]
